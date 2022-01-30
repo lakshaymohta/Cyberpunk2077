@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="images/cyberpunk/logo.png" class="logo" alt="">
+        <input type="checkbox" id="click">
+        <label for="click" class="menu_button">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li> <a href="index.html" > <i class="fa fa-home"></i> Home</a></li>
+            <li> <a href="index.html#achievement" ><i class="fa fa-trophy"></i> Achievements</a></li>
+            <li> <a href="graphics.html"><i class=" fa fa-gamepad"></i> Gameplay</a></li>
+            <li> <a href="graphics.html#graphics"><i class="fa fa-chart-pie"></i> Graphics</a></li>
+            <li> <a href="ai.html"><i class="fab fa-android"></i> A.I.</a></li>
+            <li> <a href="review.html" class="main"><i class="fa fa-pencil-alt"></i>Review</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="title">Review Form</div>
+        <form method="post" id="response" name="submit-to-google-sheet"> 
+            <div class="user_input">
+                <div class="input">
+                    <i class="fa fa-user fa-2x user_icon"></i>
+                    <input type="text" placeholder="Your Name" class="name" id="name" name="name">
+                </div>
+                <div class="input">
+                    <i class="fa fa-envelope fa-2x user_icon"></i>
+                    <input type="text" placeholder="Your Email" class="email" id="email" name="email">
+                </div>
+                <div class="input text_area">
+                    <textarea  class="review" id="review" placeholder="Comment Your Review" cols="49" rows="10" name="review"></textarea>
+                </div>
+                
+            </div>
+            <div class="button">
+                <input type="submit" onclick="form(message()); " value="Submit" name="submit">
+            </div>
+            <div class="message">
+                <div class="success" id="success">Your review was sent!</div>
+                <div class="danger" id="danger">Fields are empty!</div>
+            </div>
+        </form>
+    </div>
+    <script src="review_js.js"></script>
+</body>
+</html>

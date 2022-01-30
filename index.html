@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="sytle.css">
+    <script src="https://kit.fontawsome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-page-cyberpunk</title>
+</head>
+<body>
+    <nav>
+        <img src="images/cyberpunk/logo.png" class="logo" alt="">
+        <input type="checkbox" id="click">
+        <label for="click" class="menu_button">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li> <a href="index.html" class="main"> <i class="fa fa-home"></i> Home</a></li>
+            <li> <a href="index.html#achievement" class="main"><i class="fa fa-trophy"></i> Achievements</a></li>
+            <li> <a href="graphics.html"><i class=" fa fa-gamepad"></i> Gameplay</a></li>
+            <li> <a href="graphics.html#graphics"><i class="fa fa-chart-pie"></i> Graphics</a></li>
+            <li> <a href="ai.html"><i class="fab fa-android"></i> A.I.</a></li>
+            <li> <a href="review.html"><i class="fa fa-pencil-alt"></i>Review</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="para1">
+            CD Projekt Red developed and released Cyberpunk 2077, an action role-playing computer game. Night City, 
+            an open world set in the Cyberpunk milieu, serves as the setting for the storey. Players adopt the first-person
+            perspective of V, a configurable mercenary with hacking and mechanical talents as well as melee and ranged combat options.
+        </div>
+        <div class="para2 fade_scroll intro">
+            A team of roughly 500 individuals worked on the game utilising the REDengine 4, which is more than the number of 
+            employees that worked on the studio's previous game, The Witcher 3: Wild Hunt (2015). CD Projekt established a new 
+            division in Wrocaw, Poland, and collaborated on the project alongside Digital Scapes, Nvidia, QLOC, and Jali Research. 
+            Mike Pondsmith, the founder of cyberpunk, served as a consultant, and Keanu Reeves stars in the film. Marcin Przybyowicz 
+            headed the original score, which included contributions from a number of licenced artists.
+        </div>
+    </section>
+    <section class="video">
+        <div>
+            <video controls class="video_trailer">
+                <source src="videos/cyberpunk/trailer.mp4" type="video/mp4">
+                Your browser does not support the video tag
+            </video>
+        </div>
+    </section >
+    <section class="intro">
+        <div class="container">
+                <img  src="images/cyberpunk/cyberpunk_img_1.jpg" class="img_para1 reveal" alt="image">
+            
+        </div>
+        <div class="para3 fade_scroll reveal" >
+            After years of anticipation, CD Projekt launched Cyberpunk 2077 for PlayStation 4, Stadia, Windows, and Xbox One on 
+            December 10, 2020, with PlayStation 5 and Xbox Series X/S versions set to follow in the first quarter of 2022. It got
+             plaudits from reviews for its narrative, setting, and graphics, however parts of its gameplay components drew mixed 
+             reactions, and its themes and treatment of transgender people received some criticism.
+        </div>
+        <div class="heading reveal" id="achievement">
+            Achievements
+        </div>
+        <div class="content reveal">
+            In the year 2018, in Game Critics Awards, the game won Special Commendation for Graphics and 
+            Innovation. Same year in 2018 Golden Joystick Awards, it was awarded the Most Wanted Game. It 
+            was also nominated as the Most Anticipated Game in the Gamer's Choice Awards.
+        </div>
+        <div class="content reveal">
+            In the year 2019, the game again won the title of Special Commendation for Graphics and Most 
+            Wanted Game in Game Critics Awards and 2019 Golden Joystick Awards respectively.
+        </div>
+        <div class="content reveal">
+            In the year 2020, in the 18th Visual Effects Society Awards, game won the title of Outstanding 
+            Animated Character in a Commercial (Dex). In the same year, in Gamescom Award 2020 it was 
+            many titles which are as follows: Best PC Game, Best Role-Playing Game, Best of Gamescom, 
+            Gamescom “Most Wanted” Consumer Award as well as the Best Sony Playstation Game
+
+        </div>
+        <div class="content reveal">
+            In the year 2021, the game was nominated for the following titles:
+        </div>
+        <div class="content reveal">
+            1) Outstanding Created Environment in an Episode, Commercial, or Real-Time Project
+            <div>
+                2) Outstanding Visual Effects in a Real-Time Project
+            </div>
+            <div>
+                3) Artistic Achievement
+            </div>
+            <div>
+                4) Narrative
+            </div>
+            <div>
+                5) Performer in a Leading Role ( Cherami Leigh )
+            </div>
+            <div>
+                6) Performer in a Supporting Role ( Carla Tassara )
+            </div>
+            <div>
+                7) Best Score and Music
+            </div>
+            <div class="end">
+                8) Best Role Playing Game
+            </div>
+        </div>
+    </section>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+        window.addEventListener("scroll", reveal);
+    </script>
+</body>
+</html>

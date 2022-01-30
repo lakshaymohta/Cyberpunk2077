@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        	*{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+	body{
+		margin: 25px 55px;
+        background-color: #0c2461;
+	}
+	.myform input{
+		padding: 10px 15px;
+		font-size: 16px;
+		margin: 5px 0px;
+	}
+    .container{
+        width: 700px;
+        height: auto;
+        border-radius: 12px;
+        background-color: #ecf0f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+    }
+        .name{
+        width: 100%;
+        position: relative;
+        margin-bottom: 15px ;
+    }
+    .name input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #b2bec3;
+    border-radius: 40px;
+    }
+    .email{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px ;
+}
+.email input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #b2bec3;
+    border-radius: 40px;
+}
+.email input ::placeholder{
+    color: #b2bec3;
+}
+.review{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px ;
+}
+.review textarea{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #b2bec3;
+    border-radius: 40px;
+}
+.submit{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #0c2461;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <input type="text" class="name" placeholder="Name" name="#">
+            <input type="email" class="email" placeholder="Email" name="#">
+            <textarea name="#" id="" class="review" placeholder="Comment Your Review" cols="30" rows="10"></textarea>
+            <input type="submit"  class="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>

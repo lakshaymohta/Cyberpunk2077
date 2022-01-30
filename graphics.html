@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawsome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="graphics_style.css">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="images/cyberpunk/logo.png" class="logo" alt="">
+        <input type="checkbox" id="click">
+        <label for="click" class="menu_button">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li> <a href="index.html"> <i class="fa fa-home"></i> Home</a></li>
+            <li> <a href="index.html#achievement"><i class="fa fa-trophy"></i> Achievements</a></li>
+            <li> <a href="graphics.html" class="main"><i class=" fa fa-gamepad"></i> Gameplay</a></li>
+            <li> <a href="graphics.html#graphics" class="main nav_graphics"><i class="fa fa-chart-pie"></i> Graphics</a></li>
+            <li> <a href="ai.html"><i class="fab fa-android"></i> A.I.</a></li>
+            <li> <a href="review.html"><i class="fa fa-pencil-alt"></i>Review</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="heading  " id="gameplay">
+            gameplay
+        </div>
+        <div class="content ">
+            Cyberpunk 2077 is a first-person action role-playing game in which you play as V, a mercenary with changeable voice, 
+            face, hairstyles, physical type and alterations, background, and wardrobe. Body, Intelligence, Reflexes, Technical,
+            and Cool stat categories are influenced by the character classes that players take on, which include NetRunner (hacking),
+            Techie (machinery), and Solo (combat). To upgrade and purchase cyberware implants, V must consult a "ripperdoc"; illicit
+            marketplaces offer military-grade capability. A coloured tier system indicates the scarcity of any specific piece of 
+            equipment. V has the ability to take cover, aim, sprint, jump, double jump, and slide. Close-combat weapons can deal
+            with melee attacks. Ranged weapons are classified into three varieties, all of which can be customised and modified:
+            Power (standard), Tech (which can pierce walls and adversaries), and Smart (with homing bullets). Ranged weapons can 
+            ricochet bullets in the direction of the target, slowing them down in bullet time. Physical, thermal, EMP, and chemical 
+            damage can all be inflicted and resisted. The usage of a weapon improves accuracy and reloading speed, which is reflected
+            in character animations. Weapons are repaired and upgraded by gunsmiths. With non-lethal choices for weaponry and cyberware,
+            the game may be completed without harming anyone.
+        </div>
+        <div class="vid_container">
+            <video controls class="vid " src="videos/cyberpunk/2.mp4"></video>
+        </div>
+        <div class="linkvid">
+            <a class="linkvid reveal" href="https://www.youtube.com/watch?v=1iv_TW6YRWI&t=78s&ab_channel=GTAWorkshop">Click here to watch full video</a>
+        </div>
+        <div class="heading reveal" id="graphics">
+            Graphics
+        </div>
+        <div class="content reveal">
+            The size of Cyberpunk 2077 is around 70 Gb, and gamers must have that much free space on their machine. It is also stated that 
+            a gamer must devote approximately 40-50 hours of their time to fully complete the game. This period can also be extended if the 
+            players want to finish all six endings in the game. Because of the high graphics and large amount of space required, the game 
+            will almost probably require a strong PC to function smoothly. The minimum and recommended system requirements for Cyberpunk 2077
+             are as follows to assist viewers.
+        </div>
+        <div >
+            <table class="req reveal">
+                <tr>
+                    <th>Configurations</th>
+                    <th>Minimum Requirement</th>
+                    <th>Recommended Requirements</th>
+                </tr>
+                <tr>
+                    <th>Processor</th>
+                    <th>Intel Core i5-3570K or AMD FX-8310</th>
+                    <th>Intel Core i7-4790 or AMD Ryzen 3 3200G</th>
+                </tr>
+                <tr>
+                    <th>O.S.</th>
+                    <th>Windows 7 or 10</th>
+                    <th>Windows 10</th>
+                </tr>
+                <tr>
+                    <th>Memory</th>
+                    <th>8 GB RAM</th>
+                    <th>12 GB RAM</th>
+                </tr>
+                <tr>
+                    <th>Graphics</th>
+                    <th>NVIDIA GeForce GTX 780 or AMD Radeon RX 470</th>
+                    <th>GTX 1060 6GB / GTX 1660 Super or Radeon RX 590</th>
+                </tr>
+                <tr>
+                    <th>DirectX: </th>
+                    <th>Version 12</th>
+                    <th>Version 12</th>
+                </tr>
+                <tr>
+                    <th>Storage</th>
+                    <th>70 GB available space</th>
+                    <th>70 GB available space</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
+</body>
+</html>
